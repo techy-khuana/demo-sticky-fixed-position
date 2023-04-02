@@ -7,3 +7,32 @@ section {
     padding: 1rem;
 }
 /* developer styles go here */
+/* position sticky only works if there are direct siblings of the elements. H1 has no siblings and so the position:sticky doesn't apply unlike the H2 that has lots of siblings and the position:sticky applies. */
+/* Sticky Positioning can be thought of as a hybrid of relative and fixed positions */
+h1 {
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    background-color: tomato;
+    padding: 1rem 0.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+h3 {
+    position:sticky;
+    top: 104px;
+    background-color: #fff;
+}
+
+.snowflake {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 1;
+    /* Fixed position elements are similar to absolute positioned elements. THe natural space the element took up in the flow is gone. */
+}
